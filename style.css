@@ -142,46 +142,109 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+
 }
 
 body {
   font-family: 'Inter', sans-serif;
   font-family: 'Lexend Deca', sans-serif;
-  background-color: var(--color--Dark-desaturated-blue-card-background);
+  background-color: var(--color--Very-dark-blue-main-background);
   color: var(--color--Slightly-transparent-white-main-paragraph);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-size: 15px;
 }
 
 .container{
   display: flex;
-  justify-content: stretch;
-  align-items: stretch;
   flex-basis: 80vw;
-  border: 2px solid greenyellow;
-}
+  border-radius: 12.5px;
+  overflow: hidden;
 
+
+}
 .card-container{
   display: flex;
   flex-direction: column;
-  flex: 1 1 0;
-  border: 2px solid pink;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 2px solid pink; */
 }
 
+.left {
+  background-color: var(--color--Dark-desaturated-blue-card-background);
+  flex-basis: 1;
+  padding: 4em;
+  padding-right: 10em;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-basis: 1;
+  width: 90%;
+  align-self: flex-start;
+}
+.right {
+  background-color: var(--color--Soft-violet-accent);
+  flex-basis: 1;
+}
+img {
+  mix-blend-mode: overlay;
+  opacity: 1;
+  filter: brightness(80%);
+}
+
+.title{
+  color: var(--color--Slightly-transparent-white-main-paragraph);
+  font-weight: 700;
+  font-size: 2.5em;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.color-emphasis{
+  color: var(--color--Soft-violet-accent);
+}
+
+.copy {
+  color: var(--color--Slightly-transparent-white-stat-headings);
+  line-height: 1.6;
+  
+}
+
+.num{
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: var(--color--Slightly-transparent-white-main-paragraph);
+}
+
+.tag{
+  text-transform: uppercase;
+  font-family: 'Inter',
+    sans-serif;
+  font-weight: 400;
+  color: var(--color--Slightly-transparent-white-stat-headings);
+  letter-spacing: .1em;
+  margin-top: 18%;
+}
+
+
 footer {
+  align-self: center;
   position: absolute;
   bottom: 15px;
 }
-
 .attribution {
   font-size: 11px;
   text-align: center;
   color: var(--color--Slightly-transparent-white-stat-headings);
 }
-
 .attribution a {
-  color: var(--color--Slightly-transparent-white-main-paragraph);
+  color: var(--color--Soft-violet-accent);
   text-decoration: none;
 }
