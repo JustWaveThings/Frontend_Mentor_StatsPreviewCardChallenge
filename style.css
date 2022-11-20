@@ -150,12 +150,25 @@ body {
   background-color: var(--color--Dark-desaturated-blue-card-background);
   color: var(--color--Slightly-transparent-white-main-paragraph);
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
 }
 
+.container{
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  flex-basis: 80vw;
+  border: 2px solid greenyellow;
+}
 
-
-
+.card-container{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  border: 2px solid pink;
+}
 
 footer {
   position: absolute;
